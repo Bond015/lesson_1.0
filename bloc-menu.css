@@ -1,0 +1,219 @@
+@font-face {
+    font-family: "TTlakes";
+    src: url("fonts/TTLakes-Medium.woff");
+    font-weight: normal;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TTlakes";
+    src: url("fonts/TTLakes-Bold.woff");
+    font-weight: bold;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TTlakes";
+    src: url("fonts/TTLakes-DemiBold.woff");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	 outline: none;
+}
+
+
+
+a, a:link, a:visited  {
+    /* color: inherit; */
+    text-decoration: none;
+    /* display: inline-block; */
+}
+
+a:hover  {
+    /* color: inherit; */
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+
+
+
+body{
+    font-family: 'TTLakes', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: normal; 
+    font-size: 16px;
+}
+
+section{
+    width: 320px;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+    padding: 15px 24px 32px 24px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.nav__Icon,
+.footer__Icon
+{
+    position:relative;
+    width: 40px;
+    height: 40px;
+    background-color: #FF3E79;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav__Icon:hover,
+.footer__Icon:hover{
+    filter: contrast(200%);
+}
+
+nav .nav__Icon:nth-of-type(3){
+    margin-left: 70px;
+}
+main{
+    margin-bottom: 268px;
+}
+main ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+main  a{
+   position: relative;
+   display: block;
+   color: #1B1C21;
+}
+.listmain__list a:hover{
+    color: #7E7E82;
+    
+}
+.listmain__list a:hover::before{
+    content: '';
+        position: absolute;
+        width: 4px;
+        height: 32px;
+        top: -5px;
+        left: -24px;
+        background-color: #41F6D7;
+        border-radius: 0px 10px 10px 0px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.footer a
+{
+    color: #1B1C21;
+}
+.footer ul{
+    display: flex;
+    column-gap: 16px;
+}
+
+.footer__mobil{
+    font-size: 24px; 
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.footer__translation{
+    display: flex;
+
+}
+.footer__translation li:hover{
+    color:  #7E7E82;
+    cursor: pointer;
+}
